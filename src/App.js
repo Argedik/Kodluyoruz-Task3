@@ -12,6 +12,7 @@ function App() {
         {/* <Route path="/" element={<MainPage />} /> */}
         {/* <Route path="/" element={<MainPage />} /> */}
         <Route path="/" element={<MainPage />} />
+        <Route path="/Kodluyoruz-Task3" element={<MainPage />} />
         <Route path="/GamePage" element={<GamePage />} />
         <Route path="/ResultPage" element={<ResultPage />} />
         {/* <Route path="/home" element={<MainPage />} /> */}
