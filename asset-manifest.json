@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Kodluyoruz-Task3/static/css/main.8445facf.css",
-    "main.js": "/Kodluyoruz-Task3/static/js/main.42d700d2.js",
-    "index.html": "/Kodluyoruz-Task3/index.html",
-    "main.8445facf.css.map": "/Kodluyoruz-Task3/static/css/main.8445facf.css.map",
-    "main.42d700d2.js.map": "/Kodluyoruz-Task3/static/js/main.42d700d2.js.map"
+    "main.css": "/static/css/main.8445facf.css",
+    "main.js": "/static/js/main.42d700d2.js",
+    "index.html": "/index.html",
+    "main.8445facf.css.map": "/static/css/main.8445facf.css.map",
+    "main.42d700d2.js.map": "/static/js/main.42d700d2.js.map"
   },
   "entrypoints": [
     "static/css/main.8445facf.css",
