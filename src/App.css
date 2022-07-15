@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Handlee", cursive;
+}
+div {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+svg {
+  align-items: center;
+  background-color: #2d2d2d;
+}
+
+.none-game {
+  font-size: 128px;
+  fill: white;
+  cursor: grab;
+}
+
+.false-game {
+  font-size: 128px;
+  fill: white;
+  cursor: grab;
+}
+.true-game {
+  font-size: 128px;
+  fill: #2d2d2d;
+  cursor: grab;
+}
+
+.disable {
+  pointer-events: none;
+}
+.enable {
+  pointer-events: auto;
+}
+
+.true-circle {
+  pointer-events: none;
+  fill: #2d2d2d;
+}
+.false-circle {
+  fill: #00bf63;
+}
+.none-circle {
+  fill: white;
+}
+
+/* .App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+} */
