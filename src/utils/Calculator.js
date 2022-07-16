@@ -1,3 +1,5 @@
+//Çağrıldığında girilen argümanlara göre rastgele sayı üretme
+
 function randomN(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
