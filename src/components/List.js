@@ -1,5 +1,5 @@
 import randomN from "../utils/Calculator";
-
+//rastgele 3 sayı üretme
 const List = (props) => {
   let list = [];
   let final = 0;
