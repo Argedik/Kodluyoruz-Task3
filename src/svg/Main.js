@@ -3,6 +3,7 @@ import "../App.css";
 import { CircleS } from "./Circle";
 import { DividerXL } from "./Dividers";
 const MainCanvas = (props) => {
+  //giriş sayfasında verilerin localstorage'dan çekilmesi yada hiç veri yoksa ortamın oluşturulması
   let jsonData =
     localStorage.length > 0 && JSON.parse(localStorage.getItem("items"));
   let score = localStorage.length > 0 && jsonData["point"];
