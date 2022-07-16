@@ -5,6 +5,8 @@ import "../App.css";
 import randomN from "../utils/Calculator";
 
 const GameCanvas = (props) => {
+  
+  //her durum için birer usestate oluşturuldu.
   let checkTrue = false;
   const navigate = useNavigate();
   const [pointN, setPointN] = useState(0);
@@ -22,7 +24,10 @@ const GameCanvas = (props) => {
   const [lastQuestion, setLastQuestion] = useState("1*2");
   const [lastCorrectAnswer, setLastCorrectAnswer] = useState();
 
+  //Cevaplardan birine tıklandığında çalışan tüm durumları belirleyen yer
   function database(answer) {
+    
+    //Cevap doğruysa yapılacaklar
     if (answer === lastCorrectAnswer) {
       setBgColor("#00BF63");
       checkTrue = true;
@@ -48,6 +53,7 @@ const GameCanvas = (props) => {
         setTrueBtnClass1("true-game disable");
         setTrueCircleClass1("true-circle disable");
       }
+    //Cevap yanlışsa yapılacaklar
     } else if (answer !== lastCorrectAnswer) {
       checkTrue = false;
       setBgColor("#FA0000");
@@ -98,6 +104,8 @@ const GameCanvas = (props) => {
         setTrueCircleClass1("false-circle disable");
       }
     }
+    
+    //3 saniye sonra tıklama izni verilsin
     setTimeout(() => {
       setTrueBtnClass("none-game enable");
       setTrueBtnClass1("none-game enable");
@@ -105,7 +113,8 @@ const GameCanvas = (props) => {
       setTrueCircleClass("none-circle enable");
       setTrueCircleClass1("none-circle enable");
       setTrueCircleClass2("none-circle enable");
-
+      
+      //veri tabanına eklenecek olan tüm veriler tanımlanıyor
       let jsonData = JSON.parse(localStorage.getItem("items"));
       console.log("🚀 ~ //setTimeout ~ jsonData", jsonData);
       let point =
@@ -132,6 +141,7 @@ const GameCanvas = (props) => {
       setLastQuestion(gameObject.question);
       setLastCorrectAnswer(gameObject.correctAnswerForQuestion);
 
+      //rastgele 3 sayı üretme
       let list = [];
       let final = 0;
       let index = 0;
@@ -237,6 +247,8 @@ const GameCanvas = (props) => {
       }
     }, 3000);
   }
+  
+  //oyuna başlandığında yapılacaklar
   useEffect(() => {
     let gameObject = {};
     let numberForQuestion = randomN(2, 9);
@@ -287,6 +299,8 @@ const GameCanvas = (props) => {
     setTrueCircleClass2("none-circle enable");
   }, []);
 
+  
+    //oyun alanındaki sgvler
   return (
     <>
       <svg
