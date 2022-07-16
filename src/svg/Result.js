@@ -3,6 +3,7 @@ import { CircleR } from "./Circle";
 import { DividerL, DividerS } from "./Dividers";
 import "../App.css";
 const Result = (props) => {
+  //Sonuç sayfası
   const list = Array(10).fill("");
   let y = 240;
   const x = 1220;
